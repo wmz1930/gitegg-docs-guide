@@ -19,6 +19,21 @@ export default defineUserConfig({
   },
 
   theme,
+  head: [
+    [
+      "script",
+      {},
+      `
+      var _hmt = _hmt || [];
+      (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?bea3bd54110091405e4ebcb074f6242e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+      })();
+      `,
+    ],
+  ],
   plugins: [
     searchProPlugin({
       // 索引全部内容
