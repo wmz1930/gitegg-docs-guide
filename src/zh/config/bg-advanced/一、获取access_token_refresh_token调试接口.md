@@ -19,15 +19,15 @@ tag:
 
 - 首先将 client_Id:client_secret 进行 BASE64 加密，在线 BASE64 工具 [https://www.qvdv.com/tools/qvdv-base64.html](https://www.qvdv.com/tools/qvdv-base64.html)
 
-![](http://img.gitegg.com/cloud/docs/images/20220505143859.png#id=DiTv5&originHeight=484&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20220505143859.png#id=DiTv5&originHeight=484&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 - 将账号密码的密码进行 MD5 加密，在线 MD5 工具[https://www.qvdv.com/tools/qvdv-md5.html](https://www.qvdv.com/tools/qvdv-md5.html)
 
-![](http://img.gitegg.com/cloud/docs/images/20220505143915.png#id=swqqh&originHeight=486&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20220505143915.png#id=swqqh&originHeight=486&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 - Postman 设置 Headers 参数
 
-![](http://img.gitegg.com/cloud/docs/images/20220505143936.png#id=TaUEQ&originHeight=177&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20220505143936.png#id=TaUEQ&originHeight=177&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 <a name="16bbe721"></a>
 
 #### 参数列表：
@@ -41,7 +41,7 @@ Content-Type： 设置为表单方式提交<br />TenantId: 开启多租户时，
 
 - Postman 设置 body 参数
 
-![](http://img.gitegg.com/cloud/docs/images/20220505144003.png#id=it4P6&originHeight=204&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20220505144003.png#id=it4P6&originHeight=204&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 <a name="16bbe721-1"></a>
 
 #### 参数列表：
@@ -53,14 +53,14 @@ grant_type: password<br />username: admin<br />password: 25d55ad283aa400af464c76
 
 grant_type 表示使用密码模式换取 token<br />username 是换取 token 的用户名<br />password 是换取 token 的密码，此密码同样需要使用 md5 加密
 
-- Postman 设置 POST 请求 token 的 url 为 [http://127.0.0.1/gitegg-oauth/oauth/token<br />](http://127.0.0.1/gitegg-oauth/oauth/token) ,点击 send 按钮，就会获取到后台返回的 token 和 refresh_token<br />![](http://img.gitegg.com/cloud/docs/images/20220505144022.png#id=n4o3A&originHeight=531&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+- Postman 设置 POST 请求 token 的 url 为 [http://127.0.0.1/gitegg-oauth/oauth/token<br />](http://127.0.0.1/gitegg-oauth/oauth/token) ,点击 send 按钮，就会获取到后台返回的 token 和 refresh_token<br />![](https://cdn.gitegg.com/cloud/docs/images/20220505144022.png#id=n4o3A&originHeight=531&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
   <a name="a337e737"></a>
 
 ### 2. 使用获取到的 token 请求个人用户信息
 
 - Postman 设置获取个人信息的 Headers 参数
 
-将上一步骤中获取到的 token 前面加 Bearer 设置为 Authorization 的值，注意 Bearer 后面有个空格。Bearer 表示此 token 为 Bearer token 后台会根据前缀进行区分是 Basic 还是 Bearer 从而进行不同的认证。设置 GET 请求个人信息的 url 为 [http://127.0.0.1/gitegg-oauth/oauth/user/info<br />](http://127.0.0.1/gitegg-oauth/oauth/user/info) ,点击 send 按钮，就会获取到后台返回的个人信息。<br />![](http://img.gitegg.com/cloud/docs/images/20220505144037.png#id=C2Ram&originHeight=391&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+将上一步骤中获取到的 token 前面加 Bearer 设置为 Authorization 的值，注意 Bearer 后面有个空格。Bearer 表示此 token 为 Bearer token 后台会根据前缀进行区分是 Basic 还是 Bearer 从而进行不同的认证。设置 GET 请求个人信息的 url 为 [http://127.0.0.1/gitegg-oauth/oauth/user/info<br />](http://127.0.0.1/gitegg-oauth/oauth/user/info) ,点击 send 按钮，就会获取到后台返回的个人信息。<br />![](https://cdn.gitegg.com/cloud/docs/images/20220505144037.png#id=C2Ram&originHeight=391&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 <a name="16bbe721-2"></a>
 
 #### 参数列表：
@@ -88,14 +88,14 @@ RefreshToken（刷新令牌授权模式）和密码授权模式一样都是 OAut
 
 #### Headers:
 
-![](http://img.gitegg.com/cloud/docs/images/20220505144125.png#id=y5YSy&originHeight=174&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20220505144125.png#id=y5YSy&originHeight=174&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 <a name="cb5fe242"></a>
 
 #### Body:
 
-![](http://img.gitegg.com/cloud/docs/images/20220505144135.png#id=IELOn&originHeight=192&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20220505144135.png#id=IELOn&originHeight=192&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 <a name="2d1b7b68"></a>
 
 #### 点击 Send 按钮执行请求，获取新的 token 和 refresh_token:
 
-![](http://img.gitegg.com/cloud/docs/images/20220505144147.png#id=GkeMU&originHeight=519&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20220505144147.png#id=GkeMU&originHeight=519&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)

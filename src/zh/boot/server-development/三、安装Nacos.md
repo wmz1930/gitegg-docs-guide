@@ -17,7 +17,7 @@ tag:
 
 ### 1. Nacos 发布地址：[https://github.com/alibaba/nacos/releases](https://github.com/alibaba/nacos/releases)，从里面选择需要的版本，这里选择 2.0.3 版本，下载地址为：[nacos-server-2.0.3.tar.gz](https://github.com/alibaba/nacos/releases/download/2.0.3/nacos-server-2.0.3.tar.gz)。
 
-![](http://img.gitegg.com/cloud/docs/images/20220225171219.png#id=Hify8&originHeight=401&originWidth=914&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20220225171219.png#id=Hify8&originHeight=401&originWidth=914&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 <a name="8354f8a4"></a>
 
@@ -94,4 +94,4 @@ nacos is starting，you can check the /usr/local/nacos/nacos/logs/start.out
 
 ### 6、服务启动之后，可以访问 http://ip:8848/nacos 访问管理后台，默认用户名密码：nacos/nacos
 
-![](http://img.gitegg.com/cloud/docs/images/Nacos%E7%99%BB%E5%BD%95%E9%A1%B5.png#id=A67qM&originHeight=969&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br />![](http://img.gitegg.com/cloud/docs/images/20220225171532.png#id=AO1j4&originHeight=937&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/Nacos%E7%99%BB%E5%BD%95%E9%A1%B5.png#id=A67qM&originHeight=969&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br />![](https://cdn.gitegg.com/cloud/docs/images/20220225171532.png#id=AO1j4&originHeight=937&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)

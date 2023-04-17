@@ -17,7 +17,7 @@ tag:
 
 ### 1. 下载合适的 VSCode 安装包，[下载地址](https://code.visualstudio.com/Download)
 
-![](http://img.gitegg.com/cloud/docs/images/vscode1.png#id=qRs25&originHeight=936&originWidth=1166&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/vscode1.png#id=qRs25&originHeight=936&originWidth=1166&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="7bf731fb"></a>
 

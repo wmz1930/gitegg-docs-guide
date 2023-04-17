@@ -31,7 +31,7 @@ nohup java -Dserver.port=8086 -Dproject.name=sentinel-dashboard -jar sentinel-da
 
 ### 3. 在浏览器输入测试的 http://ip:8086 即可访问登录界面，默认用户名密码为 sentinel/sentinel
 
-![](http://img.gitegg.com/cloud/docs/images/sentinel%E7%99%BB%E5%BD%95%E9%A1%B5.png#id=Men6U&originHeight=468&originWidth=650&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/sentinel%E7%99%BB%E5%BD%95%E9%A1%B5.png#id=Men6U&originHeight=468&originWidth=650&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="6caa563c"></a>
 

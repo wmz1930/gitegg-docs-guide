@@ -165,21 +165,21 @@ docker-compose -f jenkins-compose.yml restart
 
 ### 7. 再次使用命令查看服务启动情况，就可以看到 jenkins 映射到 18081，sonarqube 映射到 19000 端口，我们在浏览器就可以访问 jenkins 和 sonarqube 的后台界面了
 
-![](http://img.gitegg.com/cloud/docs/images/20211220182048.png#id=dgV0c&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br />![](http://img.gitegg.com/cloud/docs/images/20211220182059.png#id=MUjBF&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br /><br />
+![](https://cdn.gitegg.com/cloud/docs/images/20211220182048.png#id=dgV0c&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br />![](https://cdn.gitegg.com/cloud/docs/images/20211220182059.png#id=MUjBF&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br /><br />
 
 <a name="BxvpT"></a>
 
 ### 8. Jenkins 登录初始化
 
-从 Jenkins 的登录界面提示可以知道，默认密码路径为/var/jenkins_home/secrets/initialAdminPassword，这里显示的事 Docker 容器内部的路径，实际对应我们上面服务器设置的路径为/data/docker/ci/jenkins/home/secrets/initialAdminPassword ,我们打开这个文件并输入密码就可以进入 Jenkins 管理界面<br />![](http://img.gitegg.com/cloud/docs/images/20211220182121.png#id=V0HZT&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+从 Jenkins 的登录界面提示可以知道，默认密码路径为/var/jenkins_home/secrets/initialAdminPassword，这里显示的事 Docker 容器内部的路径，实际对应我们上面服务器设置的路径为/data/docker/ci/jenkins/home/secrets/initialAdminPassword ,我们打开这个文件并输入密码就可以进入 Jenkins 管理界面<br />![](https://cdn.gitegg.com/cloud/docs/images/20211220182121.png#id=V0HZT&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ### 9. 选择安装推荐插件，安装完成之后，根据提示进行下一步操作，直到进入管理后台界面
 
-![](http://img.gitegg.com/cloud/docs/images/20211220182134.png#id=Cfmdb&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211220182134.png#id=Cfmdb&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](http://img.gitegg.com/cloud/docs/images/20211220182148.png#id=tuMz1&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211220182148.png#id=tuMz1&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](http://img.gitegg.com/cloud/docs/images/20211220182159.png#id=u6rKS&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211220182159.png#id=u6rKS&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 **备注:**
 
@@ -202,13 +202,13 @@ docker-compose -f jenkins-compose.yml restart
 
 &emsp;&emsp;安装[Kubernetes plugin](https://plugins.jenkins.io/kubernetes)插件、[Git Parameter](https://plugins.jenkins.io/git-parameter)插件（用于流水线参数化构建）、[Extended Choice Parameter](https://plugins.jenkins.io/extended-choice-parameter)插件（用于多个微服务时，选择需要构建的微服务）、 [Pipeline Utility Steps](https://plugins.jenkins.io/pipeline-utility-steps)插件（用于读取 maven 工程的.yaml、pom.xml 等）和 [Kubernetes Continuous Deploy](https://plugins.jenkins.io/kubernetes-cd)（一定要使用 1.0 版本，从[官网](https://plugins.jenkins.io/kubernetes-cd/#releases)下载然后上传） ，Jenkins --> 系统管理 --> 插件管理 --> 可选插件 --> Kubernetes plugin /Git Parameter/Extended Choice Parameter ,选中后点击 Install without restart 按钮进行安装
 
-![](http://img.gitegg.com/cloud/docs/images/20211220182401.png#id=fWeAX&originHeight=75&originWidth=1207&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211220182401.png#id=fWeAX&originHeight=75&originWidth=1207&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](http://img.gitegg.com/cloud/docs/images/20211220182418.png#id=LNMTj&originHeight=81&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211220182418.png#id=LNMTj&originHeight=81&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](http://img.gitegg.com/cloud/docs/images/20211220182428.png#id=qu6Hq&originHeight=100&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211220182428.png#id=qu6Hq&originHeight=100&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](http://img.gitegg.com/cloud/docs/images/20211220182439.png#id=TCDOu&originHeight=656&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211220182439.png#id=TCDOu&originHeight=656&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 Blueocean 目前还不支持 Git Parameter 插件和 Extended Choice Parameter 插件，Git Parameter 是通过 Git Plugin 读取分支信息，我们这里使用 Pipeline script 而不是使用 Pipeline script from SCM，是因为我们不希望把构建信息放到代码里，这样做可以开发和部署分离。
 
@@ -216,7 +216,7 @@ Blueocean 目前还不支持 Git Parameter 插件和 Extended Choice Parameter �
 
 ### 2. 配置插件
 
-&emsp;&emsp;配置[Kubernetes plugin](https://plugins.jenkins.io/kubernetes)插件，Jenkins --> 系统管理 --> 节点管理 --> Configure Clouds -->  Add a new cloud -> Kubernetes<br />![](http://img.gitegg.com/cloud/docs/images/20211220182452.png#id=YmXv4&originHeight=552&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+&emsp;&emsp;配置[Kubernetes plugin](https://plugins.jenkins.io/kubernetes)插件，Jenkins --> 系统管理 --> 节点管理 --> Configure Clouds -->  Add a new cloud -> Kubernetes<br />![](https://cdn.gitegg.com/cloud/docs/images/20211220182452.png#id=YmXv4&originHeight=552&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 <a name="BDdzn"></a>
 
@@ -233,13 +233,13 @@ cat ~/.kube/config
 #openssl pkcs12 -export -out cert.pfx -inkey client.key -in client.crt -certfile ca.crt
 ```
 
-系统管理-->凭据-->系统-->全局凭据<br />![](http://img.gitegg.com/cloud/docs/images/20211220182505.png#id=V5RBp&originHeight=478&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+系统管理-->凭据-->系统-->全局凭据<br />![](https://cdn.gitegg.com/cloud/docs/images/20211220182505.png#id=V5RBp&originHeight=478&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 <a name="PSbcN"></a>
 
 ### 4. 添加访问 Kubernetes 的凭据信息，这里填入上面登录 Kubernetes Dashboard 所创建的 token 即可，添加完成之后选择刚刚添加的凭据，然后点击连接测试，如果提示连接成功，那么说明我们的 Jenkins 可以连接 Kubernetes 了
 
-![](http://img.gitegg.com/cloud/docs/images/20211220182518.png#id=bdEe7&originHeight=609&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br />![](http://img.gitegg.com/cloud/docs/images/20211220182531.png#id=iK50h&originHeight=222&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br /><br />
+![](https://cdn.gitegg.com/cloud/docs/images/20211220182518.png#id=bdEe7&originHeight=609&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br />![](https://cdn.gitegg.com/cloud/docs/images/20211220182531.png#id=iK50h&originHeight=222&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br /><br />
 
 <a name="TCkpm"></a>
 
@@ -256,7 +256,7 @@ bash-5.1# which git
 /usr/bin/git
 ```
 
-通过命令查询可知，JAVA_HOME=/opt/java/openjdk    GIT= /usr/bin/git ， 在 Jenkins 全局工具配置中配置<br />![](http://img.gitegg.com/cloud/docs/images/20211220182543.png#id=thKuc&originHeight=616&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br />Maven 可以在宿主机映射的/data/docker/ci/jenkins/home 中安装，然后配置时，配置容器路径为/var/jenkins_home 下的 Maven 安装路径<br />![](http://img.gitegg.com/cloud/docs/images/20211220182556.png#id=Rs3vp&originHeight=291&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br />在系统配置中设置 MAVEN_HOME 供 Pipeline script 调用，如果执行脚本时提示没有权限，那么在宿主 Maven 目录的 bin 目录下执行 chmod 777 \*<br />![](http://img.gitegg.com/cloud/docs/images/20211220182613.png#id=oJeJq&originHeight=367&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+通过命令查询可知，JAVA_HOME=/opt/java/openjdk    GIT= /usr/bin/git ， 在 Jenkins 全局工具配置中配置<br />![](https://cdn.gitegg.com/cloud/docs/images/20211220182543.png#id=thKuc&originHeight=616&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br />Maven 可以在宿主机映射的/data/docker/ci/jenkins/home 中安装，然后配置时，配置容器路径为/var/jenkins_home 下的 Maven 安装路径<br />![](https://cdn.gitegg.com/cloud/docs/images/20211220182556.png#id=Rs3vp&originHeight=291&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br />在系统配置中设置 MAVEN_HOME 供 Pipeline script 调用，如果执行脚本时提示没有权限，那么在宿主 Maven 目录的 bin 目录下执行 chmod 777 \*<br />![](https://cdn.gitegg.com/cloud/docs/images/20211220182613.png#id=oJeJq&originHeight=367&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 <a name="iBrbA"></a>
 
@@ -270,13 +270,13 @@ kubectl create secret docker-registry harbor-key --docker-server=172.16.20.175 -
 
 ### 7. 新建 pipeline 流水线任务
 
-![](http://img.gitegg.com/cloud/docs/images/20211220182639.png#id=ijZ6i&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br /><br />
+![](https://cdn.gitegg.com/cloud/docs/images/20211220182639.png#id=ijZ6i&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br /><br />
 
 <a name="NPZoj"></a>
 
 ### 8. 配置流水线任务参数
 
-![](http://img.gitegg.com/cloud/docs/images/20211220182650.png#id=p6UAl&originHeight=4396&originWidth=1056&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211220182650.png#id=p6UAl&originHeight=4396&originWidth=1056&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 <a name="dxCXy"></a>
 
@@ -284,7 +284,7 @@ kubectl create secret docker-registry harbor-key --docker-server=172.16.20.175 -
 
 在流水线下面选择 Pipeline script
 
-![](http://img.gitegg.com/cloud/docs/images/20211220182702.png#id=mvB99&originHeight=509&originWidth=777&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211220182702.png#id=mvB99&originHeight=509&originWidth=777&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ```
 pipeline {

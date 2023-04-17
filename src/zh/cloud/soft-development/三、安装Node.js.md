@@ -17,19 +17,19 @@ tag:
 
 ### 1. Node.js 下载地址：[https://nodejs.org/en/download/releases/](https://nodejs.org/en/download/releases/)
 
-![](http://img.gitegg.com/cloud/docs/images/nodejs%E4%B8%8B%E8%BD%BD%E9%A1%B51.png#id=NPqTQ&originHeight=930&originWidth=985&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/nodejs%E4%B8%8B%E8%BD%BD%E9%A1%B52.png#id=iJzAa&originHeight=565&originWidth=683&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/nodejs%E4%B8%8B%E8%BD%BD%E9%A1%B51.png#id=NPqTQ&originHeight=930&originWidth=985&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/nodejs%E4%B8%8B%E8%BD%BD%E9%A1%B52.png#id=iJzAa&originHeight=565&originWidth=683&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="d15b0246"></a>
 
 ### 2. 双击安装包，一步步点击下一步即可
 
-![](http://img.gitegg.com/cloud/docs/images/node1.png#id=WvjG2&originHeight=386&originWidth=495&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/node2.png#id=mnw22&originHeight=386&originWidth=496&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/node3.png#id=RGwxF&originHeight=386&originWidth=495&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/node4.png#id=X1c9G&originHeight=386&originWidth=495&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/node5.png#id=CH52f&originHeight=387&originWidth=498&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/node6.png#id=JseAy&originHeight=386&originWidth=494&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/node1.png#id=WvjG2&originHeight=386&originWidth=495&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/node2.png#id=mnw22&originHeight=386&originWidth=496&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/node3.png#id=RGwxF&originHeight=386&originWidth=495&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/node4.png#id=X1c9G&originHeight=386&originWidth=495&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/node5.png#id=CH52f&originHeight=387&originWidth=498&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/node6.png#id=JseAy&originHeight=386&originWidth=494&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="513f39f1"></a>
 
 ### 3. 检查是否安装成功
 
-运行 -> cmd 命令窗口 ,在命令行中输入 node -v ，显示 node 版本信息表示安装成功<br />![](http://img.gitegg.com/cloud/docs/images/node%E7%89%88%E6%9C%AC.png#id=mEcX4&originHeight=163&originWidth=389&originalType=binary&ratio=1&status=done&style=none)
+运行 -> cmd 命令窗口 ,在命令行中输入 node -v ，显示 node 版本信息表示安装成功<br />![](https://cdn.gitegg.com/cloud/docs/images/node%E7%89%88%E6%9C%AC.png#id=mEcX4&originHeight=163&originWidth=389&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="0aa11545"></a>
 

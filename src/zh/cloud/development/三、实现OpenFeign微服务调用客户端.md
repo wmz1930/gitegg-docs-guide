@@ -75,4 +75,4 @@ Result<Object> goodsSkuResult = mallGoodsFeign.queryByIds(orderSkuList.stream()
 ......
 ```
 
-### 4. 上面微服务接口调用及建立好了，更多使用功能及测试，可以使用 gitegg-cloud 框架本身自带的 gitegg-service 和 gitegg-service-client 模块，里面有完整的使用示例。OpenFeign 建立好的目录结构如下：<br />![](http://img.gitegg.com/cloud/docs/images/20211116223102.png#id=vK1Zw&originHeight=942&originWidth=1392&originalType=binary&ratio=1&status=done&style=none)
+### 4. 上面微服务接口调用及建立好了，更多使用功能及测试，可以使用 gitegg-cloud 框架本身自带的 gitegg-service 和 gitegg-service-client 模块，里面有完整的使用示例。OpenFeign 建立好的目录结构如下：<br />![](https://cdn.gitegg.com/cloud/docs/images/20211116223102.png#id=vK1Zw&originHeight=942&originWidth=1392&originalType=binary&ratio=1&status=done&style=none)

@@ -15,7 +15,7 @@ tag:
 
 ### 1. 我们将服务安装到 CentOS 环境上，所以这里我们下载 tar.gz 版本,下载地址:[https://github.com/seata/seata/releases](https://github.com/seata/seata/releases)
 
-![](http://img.gitegg.com/cloud/docs/images/seata-server.png#id=MIxEN&originHeight=692&originWidth=1059&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/seata-server.png#id=MIxEN&originHeight=692&originWidth=1059&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="021f8d1a"></a>
 
@@ -29,7 +29,7 @@ tar -zxvf seata-server-1.4.1.tar.gz
 
 ### 3. 下载 Seata 需要的 SQL 脚本，新建 Seata 数据库并将需要使用的数据库脚本 seata-1.4.1\seata-1.4.1\script\server\db\mysql.sql 刷进去
 
-![](http://img.gitegg.com/cloud/docs/images/seata%E6%95%B0%E6%8D%AE%E5%BA%93.png#id=uG8be&originHeight=184&originWidth=458&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/seata%E6%95%B0%E6%8D%AE%E5%BA%93.png#id=uG8be&originHeight=184&originWidth=458&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="a0a07dd7"></a>
 
@@ -155,7 +155,7 @@ chmod 777 nacos-config.sh
 sh nacos-config.sh -h 127.0.0.1 -p 8848
 ```
 
-![](http://img.gitegg.com/cloud/docs/images/%E8%AE%BE%E7%BD%AE%E6%88%90%E5%8A%9F.png#id=byAKj&originHeight=145&originWidth=589&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/%E8%AE%BE%E7%BD%AE%E6%88%90%E5%8A%9F.png#id=byAKj&originHeight=145&originWidth=589&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="4c954093"></a>
 
@@ -171,4 +171,4 @@ nohup ./seata-server.sh -h 127.0.0.1 -p 8091 >log.out 2>1 &
 
 ### 7. 在 Nacos 上可以看到配置文件和服务已经注册成功
 
-![](http://img.gitegg.com/cloud/docs/images/Seata%E9%85%8D%E7%BD%AE.png#id=cDShP&originHeight=392&originWidth=1615&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/Seata%E6%9C%8D%E5%8A%A1.png#id=a9Bc4&originHeight=421&originWidth=1511&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/Seata%E9%85%8D%E7%BD%AE.png#id=cDShP&originHeight=392&originWidth=1615&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/Seata%E6%9C%8D%E5%8A%A1.png#id=a9Bc4&originHeight=421&originWidth=1511&originalType=binary&ratio=1&status=done&style=none)

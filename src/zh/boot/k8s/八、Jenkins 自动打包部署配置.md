@@ -26,13 +26,13 @@ tag:
 
 ### 1. 安装插件
 
-&emsp;&emsp;安装[Kubernetes plugin](https://plugins.jenkins.io/kubernetes)插件、[Git Parameter](https://plugins.jenkins.io/git-parameter)插件（用于流水线参数化构建）、[Extended Choice Parameter](https://plugins.jenkins.io/extended-choice-parameter)插件（用于多个微服务时，选择需要构建的微服务）、 [Pipeline Utility Steps](https://plugins.jenkins.io/pipeline-utility-steps)插件（用于读取 maven 工程的.yaml、pom.xml 等）和 [Kubernetes Continuous Deploy](https://plugins.jenkins.io/kubernetes-cd)（一定要使用 1.0 版本，从[官网](https://plugins.jenkins.io/kubernetes-cd/#releases)下载然后上传） ，Jenkins --> 系统管理 --> 插件管理 --> 可选插件 --> Kubernetes plugin /Git Parameter/Extended Choice Parameter ,选中后点击 Install without restart 按钮进行安装<br />![](http://img.gitegg.com/cloud/docs/images/20211221102722.png#id=ymuM0&originHeight=75&originWidth=1207&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+&emsp;&emsp;安装[Kubernetes plugin](https://plugins.jenkins.io/kubernetes)插件、[Git Parameter](https://plugins.jenkins.io/git-parameter)插件（用于流水线参数化构建）、[Extended Choice Parameter](https://plugins.jenkins.io/extended-choice-parameter)插件（用于多个微服务时，选择需要构建的微服务）、 [Pipeline Utility Steps](https://plugins.jenkins.io/pipeline-utility-steps)插件（用于读取 maven 工程的.yaml、pom.xml 等）和 [Kubernetes Continuous Deploy](https://plugins.jenkins.io/kubernetes-cd)（一定要使用 1.0 版本，从[官网](https://plugins.jenkins.io/kubernetes-cd/#releases)下载然后上传） ，Jenkins --> 系统管理 --> 插件管理 --> 可选插件 --> Kubernetes plugin /Git Parameter/Extended Choice Parameter ,选中后点击 Install without restart 按钮进行安装<br />![](https://cdn.gitegg.com/cloud/docs/images/20211221102722.png#id=ymuM0&originHeight=75&originWidth=1207&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102732.png#id=Y9Pu2&originHeight=81&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102732.png#id=Y9Pu2&originHeight=81&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102741.png#id=F7Fz4&originHeight=100&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102741.png#id=F7Fz4&originHeight=100&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102751.png#id=EMuG7&originHeight=656&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102751.png#id=EMuG7&originHeight=656&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
        Blueocean目前还不支持Git Parameter插件和Extended Choice Parameter插件，Git Parameter是通过Git Plugin读取分支信息，我们这里使用Pipeline script而不是使用Pipeline script from SCM，是因为我们不希望把构建信息放到代码里，这样做可以开发和部署分离。
 
@@ -40,7 +40,7 @@ tag:
 
 ### 2. 配置[Kubernetes plugin](https://plugins.jenkins.io/kubernetes)插件，Jenkins --> 系统管理 --> 节点管理 --> Configure Clouds -->  Add a new cloud -> Kubernetes
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102803.png#id=yd21Y&originHeight=552&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102803.png#id=yd21Y&originHeight=552&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 <a name="kpeTx"></a>
 
@@ -59,15 +59,15 @@ cat ~/.kube/config
 
 系统管理-->凭据-->系统-->全局凭据
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102816.png#id=eKh7L&originHeight=478&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102816.png#id=eKh7L&originHeight=478&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 <a name="oGaDO"></a>
 
 ### 4. 添加访问 Kubernetes 的凭据信息，这里填入上面登录 Kubernetes Dashboard 所创建的 token 即可，添加完成之后选择刚刚添加的凭据，然后点击连接测试，如果提示连接成功，那么说明我们的 Jenkins 可以连接 Kubernetes 了
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102826.png#id=oMhkU&originHeight=609&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102826.png#id=oMhkU&originHeight=609&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102837.png#id=fIi6q&originHeight=222&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102837.png#id=fIi6q&originHeight=222&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 <a name="VD71l"></a>
 
@@ -88,15 +88,15 @@ bash-5.1# which git
 
 通过命令查询可知，JAVA_HOME=/opt/java/openjdk    GIT= /usr/bin/git ， 在 Jenkins 全局工具配置中配置
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102854.png#id=hByXv&originHeight=616&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102854.png#id=hByXv&originHeight=616&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 Maven 可以在宿主机映射的/data/docker/ci/jenkins/home 中安装，然后配置时，配置容器路径为/var/jenkins_home 下的 Maven 安装路径
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102904.png#id=v1pfi&originHeight=291&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102904.png#id=v1pfi&originHeight=291&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 在系统配置中设置 MAVEN_HOME 供 Pipeline script 调用，如果执行脚本时提示没有权限，那么在宿主 Maven 目录的 bin 目录下执行 chmod 777 \*
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102918.png#id=SQNES&originHeight=367&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102918.png#id=SQNES&originHeight=367&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 <a name="AcQkn"></a>
 
@@ -110,18 +110,18 @@ kubectl create secret docker-registry harbor-key --docker-server=172.16.20.175 -
 
 ### 7. 新建 pipeline 流水线任务
 
-<br />![](http://img.gitegg.com/cloud/docs/images/20211221102929.png#id=aaqkx&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+<br />![](https://cdn.gitegg.com/cloud/docs/images/20211221102929.png#id=aaqkx&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 <a name="b0555"></a>
 
 ### 8. 配置流水线任务参数
 
-<br />![](http://img.gitegg.com/cloud/docs/images/20211221102938.png#id=pLzZq&originHeight=4396&originWidth=1056&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+<br />![](https://cdn.gitegg.com/cloud/docs/images/20211221102938.png#id=pLzZq&originHeight=4396&originWidth=1056&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 <a name="B02tB"></a>
 
 ### 9. 配置 pipeline 发布脚本
 
-<br />在流水线下面选择 Pipeline script<br />![](http://img.gitegg.com/cloud/docs/images/20211221102951.png#id=tpJsG&originHeight=509&originWidth=777&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+<br />在流水线下面选择 Pipeline script<br />![](https://cdn.gitegg.com/cloud/docs/images/20211221102951.png#id=tpJsG&originHeight=509&originWidth=777&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ```
 pipeline {
@@ -303,8 +303,8 @@ pipeline {
 ### 1. Pipeline Utility Steps 第一次执行会报错 Scripts not permitted to use method 或者 Scripts not permitted to use staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods getProperties java.lang.Object
 
 解决：系统管理-->In-process Script Approval->点击 Approval
-![](http://img.gitegg.com/cloud/docs/images/20211221103003.png#id=UsjSd&originHeight=457&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
-![](http://img.gitegg.com/cloud/docs/images/20211221103013.png#id=n2ff4&originHeight=615&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221103003.png#id=UsjSd&originHeight=457&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221103013.png#id=n2ff4&originHeight=615&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 <a name="mtX7Y"></a>
 
@@ -333,7 +333,7 @@ spring:
 kubectl edit cm kube-proxy -n kube-system
 ```
 
-修改 mode: "ipvs"<br />![](http://img.gitegg.com/cloud/docs/images/20211221103024.png#id=ktJKP&originHeight=731&originWidth=773&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br />重新加载 kube-proxy 配置文件
+修改 mode: "ipvs"<br />![](https://cdn.gitegg.com/cloud/docs/images/20211221103024.png#id=ktJKP&originHeight=731&originWidth=773&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)<br />重新加载 kube-proxy 配置文件
 
 ```
 kubectl delete pod -l k8s-app=kube-proxy -n kube-system

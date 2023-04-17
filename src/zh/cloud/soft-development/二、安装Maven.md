@@ -19,7 +19,7 @@ tag:
 
 Maven(http://maven.apache.org/download.cgi)需要JDK的支持，我们这里选择最新的Manven版本3.6.3，需要JDK1.7以上的支持，JDK的安装以及配置在上面我们已经完成。 下载 Maven 的 zip 包: [apache-maven-3.6.3-bin.zip](https://mirrors.bfsu.edu.cn/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip)
 
-![](http://img.gitegg.com/cloud/docs/images/Maven%E4%B8%8B%E8%BD%BD%E9%A1%B5.png#id=u3mpn&originHeight=1311&originWidth=1044&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/Maven%E4%B8%8B%E8%BD%BD%E9%A1%B5.png#id=u3mpn&originHeight=1311&originWidth=1044&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="20c688bc"></a>
 
@@ -27,7 +27,7 @@ Maven(http://maven.apache.org/download.cgi)需要JDK的支持，我们这里选�
 
 在系统环境变量中添加 M2_HOME 和 MAVEN_HOME，最后在 PATH 中添加 Maven 的 bin 目录: %MAVEN_HOME%\bin
 
-![](http://img.gitegg.com/cloud/docs/images/M2_HOME.png#id=KpGc9&originHeight=660&originWidth=617&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/M2_BIN.png#id=G0Sjy&originHeight=660&originWidth=618&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/M2_HOME.png#id=KpGc9&originHeight=660&originWidth=617&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/M2_BIN.png#id=G0Sjy&originHeight=660&originWidth=618&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="ec981f89"></a>
 
@@ -35,7 +35,7 @@ Maven(http://maven.apache.org/download.cgi)需要JDK的支持，我们这里选�
 
 运行 -> cmd 命令窗口，在命令行中输入：mvn -version ，如下图所示，展示版本信息说明安装配置成功。
 
-![](http://img.gitegg.com/cloud/docs/images/Maven%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF.png#id=vQsZR&originHeight=218&originWidth=662&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/Maven%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF.png#id=vQsZR&originHeight=218&originWidth=662&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="a78126fa"></a>
 
@@ -43,7 +43,7 @@ Maven(http://maven.apache.org/download.cgi)需要JDK的支持，我们这里选�
 
 我们可以选择安装 Nexus 作为 Maven 仓库管理器，也可以使用阿里云提供的 Maven 私服，配置方式都是一样的，这里我们选择使用[阿里云的 Maven 私服](https://maven.aliyun.com/mvn/guide)，如果是企业使用，这里建议申请私有仓库：
 
-![](http://img.gitegg.com/cloud/docs/images/%E9%98%BF%E9%87%8CMaven%E4%BB%93%E5%BA%93.png#id=MHhEv&originHeight=759&originWidth=1843&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93.png#id=liSdf&originHeight=627&originWidth=1908&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80.png#id=vg1Gf&originHeight=866&originWidth=1904&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/%E9%98%BF%E9%87%8CMaven%E4%BB%93%E5%BA%93.png#id=MHhEv&originHeight=759&originWidth=1843&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93.png#id=liSdf&originHeight=627&originWidth=1908&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80.png#id=vg1Gf&originHeight=866&originWidth=1904&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="277b8041"></a>
 

@@ -70,7 +70,7 @@ kubeadm init --kubernetes-version=v1.22.3  \
 --service-cidr=10.20.0.0/16 --pod-network-cidr=10.222.0.0/16
 ```
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102314.png#id=YOKy6&originHeight=425&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102314.png#id=YOKy6&originHeight=425&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 创建必要文件
 
@@ -149,6 +149,6 @@ service/kubernetes   ClusterIP   10.20.0.1      <none>        443/TCP        68m
 service/nginx        NodePort    10.20.17.199   <none>        80:32605/TCP 9s
 ```
 
-服务显示 service/nginx 的 PORT(S)为 80:32605/TCP， 我们在浏览器中访问主从地址的 32605 端口，查看 nginx 是否运行<br />[http://172.16.20.111:32605/](http://172.16.20.111:32605/)<br />[http://172.16.20.112:32605/](http://172.16.20.112:32605/)<br />[http://172.16.20.113:32605/](http://172.16.20.113:32605/)<br />成功后显示如下界面：<br />![](http://img.gitegg.com/cloud/docs/images/20211221102334.png#id=xtVIU&originHeight=305&originWidth=935&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+服务显示 service/nginx 的 PORT(S)为 80:32605/TCP， 我们在浏览器中访问主从地址的 32605 端口，查看 nginx 是否运行<br />[http://172.16.20.111:32605/](http://172.16.20.111:32605/)<br />[http://172.16.20.112:32605/](http://172.16.20.112:32605/)<br />[http://172.16.20.113:32605/](http://172.16.20.113:32605/)<br />成功后显示如下界面：<br />![](https://cdn.gitegg.com/cloud/docs/images/20211221102334.png#id=xtVIU&originHeight=305&originWidth=935&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 <a name="fcccc438"></a>

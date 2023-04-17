@@ -18,7 +18,7 @@ tag:
 
 ### 1、下载安装配置文件 recommended.yaml ,注意在https://github.com/kubernetes/dashboard/releases查看Kubernetes 和 Kubernetes Dashboard 的版本对应关系。
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102446.png#id=QLUGR&originHeight=766&originWidth=1152&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102446.png#id=QLUGR&originHeight=766&originWidth=1152&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ```
 # 执行下载
@@ -154,6 +154,6 @@ token:      eyJhbGciOiJSUzI1NiIsImtpZCI6ImRmbVVfRy15QzdfUUF4ZmFuREZMc3dvd0IxQ3It
 
 ### 7、在页面访问 Kubernetes Dashboard，注意一定要使用 https，[https://172.16.20.111:30010](https://172.16.20.111:30010) ，输入 token 登录成功后就进入了后台管理界面，原先命令行的操作就可以在管理界面进操作了
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102500.png#id=vdZQ8&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102500.png#id=vdZQ8&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102514.png#id=VIQNW&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102514.png#id=VIQNW&originHeight=605&originWidth=1240&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)

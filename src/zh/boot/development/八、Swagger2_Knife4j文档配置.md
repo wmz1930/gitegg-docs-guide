@@ -30,12 +30,12 @@ oauth-list: # 相关静态文件 staticFiles: - "/doc.html" - "/webjars/**" -
 
 ### 3. Swagger2 聚合文档访问地址：http://127.0.0.1/doc.html
 
-![](http://img.gitegg.com/cloud/docs/images/20230414152009.png)
+![](https://cdn.gitegg.com/cloud/docs/images/20230414152009.png)
 
 ### 4. 设置公共鉴权请求头 Authorization，如果开启了多租户模式，需要设置 TenantId
 
-![](http://img.gitegg.com/cloud/docs/images/20230414152025.png)
+![](https://cdn.gitegg.com/cloud/docs/images/20230414152025.png)
 
 ### 5. 公共请求头设置好之后，就可以选择自己需要的接口，填写参数进行调试了。
 
-![](http://img.gitegg.com/cloud/docs/images/20230414152039.png)
+![](https://cdn.gitegg.com/cloud/docs/images/20230414152039.png)

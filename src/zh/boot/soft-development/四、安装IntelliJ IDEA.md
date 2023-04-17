@@ -17,7 +17,7 @@ tag:
 
 ### 1. 下载需要的安装包，[IntelliJ IDEA 下载](https://www.jetbrains.com/idea/)，双击安装，一直点击下一步，如果 Windows 系统且有多个磁盘，尽量修改一下安装目录，不要安装在系统盘 C 盘即可。
 
-![](http://img.gitegg.com/cloud/docs/images/Idea%E7%AC%AC%E4%B8%80%E6%AD%A5.png#id=KS667&originHeight=387&originWidth=497&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/Idea%E7%AC%AC%E4%BA%8C%E6%AD%A5.png#id=iCEXR&originHeight=388&originWidth=498&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/Idea%E7%AC%AC%E4%B8%89%E6%AD%A5.png#id=i3QJ2&originHeight=388&originWidth=497&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/Idea%E7%AC%AC%E5%9B%9B%E6%AD%A5.png#id=WWOkg&originHeight=386&originWidth=497&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/Idea%E7%AC%AC%E4%B8%80%E6%AD%A5.png#id=KS667&originHeight=387&originWidth=497&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/Idea%E7%AC%AC%E4%BA%8C%E6%AD%A5.png#id=iCEXR&originHeight=388&originWidth=498&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/Idea%E7%AC%AC%E4%B8%89%E6%AD%A5.png#id=i3QJ2&originHeight=388&originWidth=497&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/Idea%E7%AC%AC%E5%9B%9B%E6%AD%A5.png#id=WWOkg&originHeight=386&originWidth=497&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="9068e0fa"></a>
 
@@ -27,7 +27,7 @@ tag:
 
 ### 3. 配置默认的 Maven 和 JDK 路径
 
-![](http://img.gitegg.com/cloud/docs/images/IdeaSettings.png#id=HySFD&originHeight=740&originWidth=789&originalType=binary&ratio=1&status=done&style=none)<br />![](http://img.gitegg.com/cloud/docs/images/Idea_Maven.png#id=X66dc&originHeight=702&originWidth=987&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/IdeaSettings.png#id=HySFD&originHeight=740&originWidth=789&originalType=binary&ratio=1&status=done&style=none)<br />![](https://cdn.gitegg.com/cloud/docs/images/Idea_Maven.png#id=X66dc&originHeight=702&originWidth=987&originalType=binary&ratio=1&status=done&style=none)
 
 IDEA 默认会读取到系统配置的 JDK 环境变量，具体项目可通过 File -> Project Structure 进行配置。
 
@@ -35,4 +35,4 @@ IDEA 默认会读取到系统配置的 JDK 环境变量，具体项目可通过 
 
 ### 4. 通过插件中心，安装 Lombok，MybatisX, Save Actions, Eclipse Code Formatter 插件,后面会详细介绍几款插件的用法：
 
-![](http://img.gitegg.com/cloud/docs/images/IdeaPlugins.png#id=RqNGx&originHeight=703&originWidth=985&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/IdeaPlugins.png#id=RqNGx&originHeight=703&originWidth=985&originalType=binary&ratio=1&status=done&style=none)

@@ -107,7 +107,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 vi /lib/systemd/system/docker.service
 ```
 
-修改 ExecStart，添加 -H tcp://0.0.0.0:2375<br />![](http://img.gitegg.com/cloud/docs/images/20211221102248.png#id=KE5jn&originHeight=477&originWidth=734&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+修改 ExecStart，添加 -H tcp://0.0.0.0:2375<br />![](https://cdn.gitegg.com/cloud/docs/images/20211221102248.png#id=KE5jn&originHeight=477&originWidth=734&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 ```
 ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375 --containerd=/run/containerd/containerd.sock
@@ -125,4 +125,4 @@ systemctl daemon-reload && service docker restart
 curl http://localhost:2375/version
 ```
 
-![](http://img.gitegg.com/cloud/docs/images/20211221102300.png#id=HfhZq&originHeight=140&originWidth=759&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
+![](https://cdn.gitegg.com/cloud/docs/images/20211221102300.png#id=HfhZq&originHeight=140&originWidth=759&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)

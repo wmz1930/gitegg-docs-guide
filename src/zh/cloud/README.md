@@ -65,7 +65,7 @@ MIT 协议，开源免费，GitEgg（Spring Boot2 + SpringCloud Hoxton.SR8 + Spr
 
 ### 它是如何工作的？
 
-![GitEgg架构图](http://img.gitegg.com/cloud/docs/images/GitEgg架构图.png)
+![GitEgg架构图](https://cdn.gitegg.com/cloud/docs/images/GitEgg架构图.png)
 
 ### 源码目录结构
 
@@ -136,7 +136,7 @@ GitEgg-Cloud
 - gitee : https://gitee.com/wmz1930/GitEgg
 - 技术交流群:
 
-![技术交流](http://img.gitegg.com/cloud/docs/images/20230411120043.png)
+![技术交流](https://cdn.gitegg.com/cloud/docs/images/20230411120043.png)
 
 #### &emsp;&emsp;欢迎提交 pull request，issue 以及优秀的改进建议，我们将认真和您探讨技术、设计以及实现方案等相关问题。
 

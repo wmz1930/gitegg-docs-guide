@@ -24,7 +24,7 @@ java '-Dserver.port=8086' '-Dcsp.sentinel.dashboard.server=127.0.0.1:8086' '-Dpr
 
 ### 2. 启动成功之后，访问 Sentinel 管理台地址：[http://127.0.0.1:8086](http://127.0.0.1:8086) ， 默认用户名/密码：sentinel/sentinel。
 
-![](http://img.gitegg.com/cloud/docs/images/Sentinel.png#id=Nuk7k&originHeight=1240&originWidth=2560&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/Sentinel.png#id=Nuk7k&originHeight=1240&originWidth=2560&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="853fa1dc"></a>
 
@@ -44,7 +44,7 @@ java '-Dserver.port=8086' '-Dcsp.sentinel.dashboard.server=127.0.0.1:8086' '-Dpr
 ]
 ```
 
-![](http://img.gitegg.com/cloud/docs/images/SentinelNacos1.png#id=eW05X&originHeight=939&originWidth=2547&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/SentinelNacos1.png#id=eW05X&originHeight=939&originWidth=2547&originalType=binary&ratio=1&status=done&style=none)
 
 <a name="aa1d9c6a"></a>
 
@@ -69,4 +69,4 @@ java '-Dserver.port=8086' '-Dcsp.sentinel.dashboard.server=127.0.0.1:8086' '-Dpr
             rule-type: flow
 ```
 
-![](http://img.gitegg.com/cloud/docs/images/SentinelNacos2.png#id=i0dkq&originHeight=1006&originWidth=2560&originalType=binary&ratio=1&status=done&style=none)
+![](https://cdn.gitegg.com/cloud/docs/images/SentinelNacos2.png#id=i0dkq&originHeight=1006&originWidth=2560&originalType=binary&ratio=1&status=done&style=none)
